@@ -1,0 +1,762 @@
+languagesystem DFLT dflt;
+languagesystem cyrl dflt;
+languagesystem grek dflt;
+languagesystem latn dflt;
+
+# GSUB
+
+lookup UppercaseLookup {
+  lookupflag 0;
+    sub t by T ;
+    sub h by H ;
+    sub e by E ;
+    sub a by A ;
+    sub b by B ;
+    sub c by C ;
+    sub d by D ;
+    sub f by F ;
+    sub g by G ;
+    sub i by I ;
+    sub j by K ;
+    sub k by K ;
+    sub l by L ;
+    sub m by M ;
+    sub n by N ;
+    sub o by O ;
+    sub p by P ;
+    sub q by Q ;
+    sub r by R ;
+    sub s by S ;
+    sub u by U ;
+    sub v by V ;
+    sub w by W ;
+    sub x by X ;
+    sub y by Y ;
+    sub z by Z ;
+} UppercaseLookup;
+
+lookup CapitalToUppercaseLookup {
+  lookupflag 0;
+    sub [A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]
+    [a b c d e f g h i j k l m n o p q r s t u v w x y z]' lookup UppercaseLookup;
+} CapitalToUppercaseLookup;
+
+lookup SitelenPonaLookup {
+    lookupflag 0;
+    ;
+    # Original source: 2
+    sub P i n g o by Pingo.sp;
+    sub a p e j a by apeja.sp;
+    sub a l a s a by alasa.sp;
+    sub a k e s i by akesi.sp;
+    sub a n p a by anpa.sp;
+    sub a w e n by awen.sp;
+    sub a n t e by ante.sp;
+    sub a l e by ale.sp;
+    sub a l i by ale.sp;
+    sub a l u by alu.sp;
+    sub a l a by ala.sp;
+    sub a n u by anu.sp;
+    sub e p i k u by epiku.sp;
+    sub e s u n by esun.sp;
+    sub e t e by ete.sp;
+    sub e w e by ewe.sp;
+    sub e n by en.sp;
+    sub i s i p i n by isipin.sp;
+    sub i n s a by insa.sp;
+    sub i l o by ilo.sp;
+    sub i k e by ike.sp;
+    sub i j o by ijo.sp;
+    sub j a n hyphen p o n a by janpona.sp;
+    sub j a n hyphen i k e by janike.sp;
+    sub j a s i m a by jasima.sp;
+    sub j e l o by jelo.sp;
+    sub j a k i by jaki.sp;
+    sub j a n by jan.sp;
+    sub j o by jo.sp;
+    sub k i j e t e s a n t a k a l u by kijetesantakalu.sp;
+    sub k a l i j o p i l a l e by kalijopilale.sp;
+    sub k a m a l a w a l a by kamalawala.sp;
+    sub k i j o s i n by kijosin.sp;
+    sub k e p e k e n by kepeken.sp;
+    sub k u l u p u by kulupu.sp;
+    sub k i p i s i by kipisi.sp;
+    sub k a l a m a by kalama.sp;
+    sub k u n t u by kuntu.sp;
+    sub k i w e n by kiwen.sp;
+    sub k u l e by kule.sp;
+    sub k e s e by kese.sp;
+    sub k i l i by kili.sp;
+    sub k u t e by kute.sp;
+    sub k a s i by uniEE22.sp;
+    sub k a m a by kama.sp;
+    sub k i k i by kiki.sp;
+    sub k a l a by kala.sp;
+    sub k a n by kan.sp;
+    sub k i n by kin.sp;
+    sub k o n by kon.sp;
+    sub k e n by ken.sp;
+    sub k e by ke.sp;
+    sub k o by ko.sp;
+    sub k u by ku.sp;
+    sub k i by ki.sp;
+    sub k e by checkmark;
+    sub l i n j a hyphen s u w i by linjasuwi.sp;
+    sub l i p a m a n k a by lipamanka.sp;
+    sub l i p u hyphen s o n a by lipusona.sp;
+    sub l i p u hyphen n i m i by lipunimi.sp;
+    sub l i p u hyphen s i n by lipusin.sp;
+    sub l i n l u w i by linluwi.sp;
+    sub l a n p a n by lanpan.sp;
+    sub l i k u j o by likujo.sp;
+    sub l u k i n by lukin.sp;
+    sub l i n j a by linja.sp;
+    sub l e k o by leko.sp;
+    sub l u k a by luka.sp;
+    sub l o j e by loje.sp;
+    sub l i p u by lipu.sp;
+    sub l u p a by lupa.sp;
+    sub l i l i by lili.sp;
+    sub l e t e by lete.sp;
+    sub l a w a by lawa.sp;
+    sub l a s o by laso.sp;
+    sub l a p e by lape.sp;
+    sub l e n by len.sp;
+    sub l o n by lon.sp;
+    sub l i by li.sp;
+    sub l u by lu.sp;
+    sub l a by la.sp;
+    sub m a m a hyphen s i n a by mamasin.sp;
+    sub m e l i hyphen a l t by female;
+    sub m i j e hyphen a l t by male;
+    sub m u l a p i s u by mulapisu.sp;
+    sub m i s i k e k e by misikeke.sp;
+    sub m o n s u t a by monsuta.sp;
+    sub m a j u n a by majuna.sp;
+    sub m a m a s i by mamasin.sp;
+    sub m o n s i by monsi.sp;
+    sub m i s a by misa.sp;
+    sub m u t e by mute.sp;
+    sub m u s i by musi.sp;
+    sub m e s o by meso.sp;
+    sub m o l i by moli.sp;
+    sub m o k u by moku.sp;
+    sub m i j e by mije.sp;
+    sub m e l i by meli.sp;
+    sub m a n i by mani.sp;
+    sub m a m a by mama.sp;
+    sub m u n by mun.sp;
+    sub m i by mi.sp;
+    sub m u by mu.sp;
+    sub m a by ma.sp;
+    sub n a s i n hyphen k u l u p u by nasinkulupu.sp;
+    sub n a m a k o by namako.sp;
+    sub n a s i n by nasin.sp;
+    sub n a n p a by nanpa.sp;
+    sub n o k a by noka.sp;
+    sub n i m i by nimi.sp;
+    sub n e n a by nena.sp;
+    sub n a t a by nata.sp;
+    sub n a s a by nasa.sp;
+    sub n e j a by four;
+    sub n i by ni.sp;
+    sub o p e n by open.sp;
+    sub o l i n by olin.sp;
+    sub o k e by oke.sp;
+    sub o n a by ona.sp;
+    sub o k o by oko.sp;
+    sub p o m o t o l o by pomotolo.sp;
+    sub p o l i n p i n by polinpin.sp;
+    sub p i m e j a by pimeja.sp;
+    sub p a l i s a by palisa.sp;
+    sub p a k a l a by pakala.sp;
+    sub p i l i n by pilin.sp;
+    sub p o k i by poki.sp;
+    sub p o k a by poka.sp;
+    sub p i p i by pipi.sp;
+    sub p i n i by pini.sp;
+    sub p e t o by peto.sp;
+    sub p o w e by powe.sp;
+    sub p a n a by pana.sp;
+    sub p a k e by pake.sp;
+    sub p a l i by pali.sp;
+    sub p o n a by pona.sp;
+    sub p a n by pan.sp;
+    sub p i by pi.sp;
+    sub p u by pu.sp;
+    sub p o by four;
+    sub s i t e l e n hyphen s i t e l e n by sitelensitelen.sp;
+    sub s i t e l e n hyphen p o n a by sitelenpona.sp;
+    sub s u t o p a t i k u n a by sutopatikuna.sp;
+    sub s i t e l e n by sitelen.sp;
+    sub s o w e l i by soweli.sp;
+    sub s i n p i n by sinpin.sp;
+    sub s i j e l o by sijelo.sp;
+    sub s l a p e by slape.sp;
+    sub s e m e question by seme.sp;
+    sub s u l i by suli.sp;
+    sub s o t o by soto.sp;
+    sub s o n a by sona.sp;
+    sub s o k o by soko.sp;
+    sub s u w i by suwi.sp;
+    sub s i n a by sina.sp;
+    sub s i k e by sike.sp;
+    sub s u p a by supa;
+    sub s e w i by sewi.sp;
+    sub s e m e by seme.sp;
+    sub s u n o by suno.sp;
+    sub s e l o by selo.sp;
+    sub s e l i by seli.sp;
+    sub s a m a by sama.sp;
+    sub s a n by three;
+    sub s i n by sin.sp;
+    sub t o k i hyphen p o n a by tokipona.sp;
+    sub t o n s i by tonsi.sp;
+    sub t e n p o by tenpo.sp;
+    sub t u l i by three;
+    sub t a k i by taki.sp;
+    sub t o m o by tomo.sp;
+    sub t o k i by toki.sp;
+    sub t e j e by teje.sp;
+    sub t e l o by telo.sp;
+    sub t a w a by tawa.sp;
+    sub t a s o by taso.sp;
+    sub t a n by tan.sp;
+    sub t o by to.sp;
+    sub t u by tu.sp;
+    sub t e by te.sp;
+    sub u m e s u by umesu.sp;
+    sub u s a w i by usawi.sp;
+    sub u t a l a by utala.sp;
+    sub u n p a by unpa.sp;
+    sub u t a by uta.sp;
+    sub u n u by unu.sp;
+    sub w a l e j a by waleja.sp;
+    sub w a k e n by waken.sp;
+    sub w i l e by wile.sp;
+    sub w e k a by weka.sp;
+    sub w a w a by wawa.sp;
+    sub w a s o by waso.sp;
+    sub w a l o by walo.sp;
+    sub w a n by wan.sp;
+    sub w a by wa.sp;
+    sub y u p e k o s i by yupekosi.sp;
+} SitelenPonaLookup;
+
+lookup OneToOneGlyphSubstitution {
+  lookupflag 0;
+    sub a by a.sp;
+    sub e by e.sp;
+    sub n by n.sp;
+    sub o by o.sp;
+} OneToOneGlyphSubstitution;
+
+lookup SpacesLookup {
+  lookupflag 0;
+    sub space by uni200B ;
+} SpacesLookup;
+
+lookup CloseQuoteLookup {
+  lookupflag 0;
+    sub quotedbl by to.sp ;
+} CloseQuoteLookup;
+
+lookup TeToQuotesLookup {
+  lookupflag 0;
+    @cc7_match_1 = [space uni200B ];
+    @cc7_match_2 = [quotedbl ];
+    @cc7_match_3 = [period comma ];
+    @cc7_back_1 = [space uni200B ];
+    @cc7_back_2 = [quotedbl ];
+    @cc7_back_3 = [period comma ];
+    @cc7_ahead_1 = [space uni200B ];
+    @cc7_ahead_2 = [quotedbl ];
+    @cc7_ahead_3 = [period comma ];
+    sub @cc7_match_1 @cc7_match_2'  by [te.sp ] ;
+    sub @cc7_match_2'lookup CloseQuoteLookup  @cc7_match_1' ;
+    sub @cc7_match_3' @cc7_match_2'lookup CloseQuoteLookup  ;
+    sub @cc7_match_2'lookup CloseQuoteLookup  @cc7_match_3' ;
+} TeToQuotesLookup;
+
+lookup ReplaceSpacesLookup {
+  lookupflag 0;
+    @cc8_match_1 = [space ];
+    @cc8_match_2 = [exclam comma period colon semicolon question periodcentered ];
+    @cc8_match_3 = [parenright bracketright to.sp ];
+    @cc8_match_4 = [parenleft bracketleft te.sp ];
+    @cc8_back_1 = [space ];
+    @cc8_back_2 = [exclam comma period colon semicolon question periodcentered ];
+    @cc8_back_3 = [parenright bracketright to.sp ];
+    @cc8_back_4 = [parenleft bracketleft te.sp ];
+    @cc8_ahead_1 = [space ];
+    @cc8_ahead_2 = [exclam comma period colon semicolon question periodcentered ];
+    @cc8_ahead_3 = [parenright bracketright to.sp ];
+    @cc8_ahead_4 = [parenleft bracketleft te.sp ];
+    sub @cc8_match_2' @cc8_match_1'lookup SpacesLookup  ;
+    sub @cc8_match_1'lookup SpacesLookup  @cc8_match_4' ;
+    sub @cc8_match_3' @cc8_match_1'lookup SpacesLookup  ;
+} ReplaceSpacesLookup;
+
+lookup ReverseSPLookup {
+  lookupflag 0;
+    sub a.sp by a ;
+    sub akesi.sp by a k e s i ;
+    sub ala.sp by a l a ;
+    sub alasa.sp by a l a s a ;
+    sub ale.sp by a l e ;
+    sub anpa.sp by a n p a ;
+    sub ante.sp by a n t e ;
+    sub anu.sp by a n u ;
+    sub awen.sp by a w e n ;
+    sub e.sp by e ;
+    sub en.sp by e n ;
+    sub esun.sp by e s u n ;
+    sub ijo.sp by i j o ;
+    sub ike.sp by i k e ;
+    sub ilo.sp by i l o ;
+    sub insa.sp by i n s a ;
+    sub jaki.sp by j a k i ;
+    sub jan.sp by j a n ;
+    sub jelo.sp by j e l o ;
+    sub jo.sp by j o ;
+    sub kala.sp by k a l a ;
+    sub kalama.sp by k a l a m a ;
+    sub kama.sp by k a m a ;
+    sub ken.sp by k e n ;
+    sub kepeken.sp by k e p e k e n ;
+    sub kili.sp by k i l i ;
+    sub kiwen.sp by k i w e n ;
+    sub ko.sp by k o ;
+    sub kon.sp by k o n ;
+    sub kule.sp by k u ;
+    sub kulupu.sp by k u l u p u ;
+    sub kute.sp by k u t e ;
+    sub lape.sp by l a p e ;
+    sub laso.sp by l a s o ;
+    sub lawa.sp by l a w a ;
+    sub len.sp by l e n ;
+    sub lete.sp by l e t e ;
+    sub li.sp by l i ;
+    sub lili.sp by l i l i ;
+    sub linja.sp by l i n j a ;
+    sub lipu.sp by l i p u ;
+    sub loje.sp by l o j e ;
+    sub lon.sp by l o n ;
+    sub luka.sp by l u k a ;
+    sub lukin.sp by l u k i n ;
+    sub lupa.sp by l u p a ;
+    sub ma.sp by m a ;
+    sub mani.sp by m a n i ;
+    sub meli.sp by m e l i ;
+    sub mi.sp by m i ;
+    sub mije.sp by m i j e ;
+    sub moku.sp by m o k u ;
+    sub moli.sp by m o l i ;
+    sub monsi.sp by m o n s i ;
+    sub mu.sp by m u ;
+    sub mun.sp by m u n ;
+    sub musi.sp by m u s i ;
+    sub mute.sp by m u t e ;
+    sub nanpa.sp by n a n p a ;
+    sub nasa.sp by n a s a ;
+    sub nasin.sp by n a s i n ;
+    sub nena.sp by n e n a ;
+    sub ni.sp by n i ;
+    sub nimi.sp by n i m i ;
+    sub noka.sp by n o k a ;
+    sub o.sp by o ;
+    sub olin.sp by o l i n ;
+    sub ona.sp by o n a ;
+    sub open.sp by o p e n ;
+    sub pakala.sp by p a k a l a ;
+    sub pali.sp by p a l i ;
+    sub palisa.sp by p a l i s a ;
+    sub pan.sp by p a n ;
+    sub pana.sp by p a n a ;
+    sub pi.sp by p i ;
+    sub pilin.sp by p i l i n ;
+    sub pimeja.sp by p i m e j a ;
+    sub pini.sp by p i n i ;
+    sub pipi.sp by p i p i ;
+    sub poka.sp by p o k a ;
+    sub poki.sp by p o k i ;
+    sub pona.sp by p o n a ;
+    sub pu.sp by p u ;
+    sub sama.sp by s a m a ;
+    sub seli.sp by s e l i ;
+    sub selo.sp by s e l o ;
+    sub seme.sp by s e m e ;
+    sub sewi.sp by s e w i ;
+    sub sijelo.sp by s i j e l o ;
+    sub sike.sp by s i k e ;
+    sub sin.sp by s i n ;
+    sub sina.sp by s i n a ;
+    sub sinpin.sp by s i n p i n ;
+    sub sitelen.sp by s i t e l e n ;
+    sub sona.sp by s o n a ;
+    sub soweli.sp by s o w e l i ;
+    sub suli.sp by s u l i ;
+    sub suno.sp by s u n o ;
+    sub suwi.sp by s u w i ;
+    sub tan.sp by t a n ;
+    sub taso.sp by t a s o ;
+    sub tawa.sp by t a w a ;
+    sub telo.sp by t e l o ;
+    sub tenpo.sp by t e n p o ;
+    sub toki.sp by t o k i ;
+    sub tomo.sp by t o m o ;
+    sub tu.sp by t u ;
+    sub unpa.sp by u n p a ;
+    sub uta.sp by u t a ;
+    sub utala.sp by u t a l a ;
+    sub walo.sp by w a l o ;
+    sub wan.sp by w a n ;
+    sub waso.sp by w a s o ;
+    sub wawa.sp by w a w a ;
+    sub weka.sp by w e k a ;
+    sub wile.sp by w i l e ;
+    sub la.sp by l a ;
+    sub tonsi.sp by t o n s i ;
+    sub leko.sp by l e k o ;
+    sub pake.sp by p a k e ;
+    sub kipisi.sp by k i p i s i ;
+    sub kin.sp by k i n ;
+    sub monsuta.sp by m o n s u t a ;
+    sub soko.sp by s o k o ;
+    sub oko.sp by o k o ;
+    sub oke.sp by o k o ;
+    sub kijetesantakalu.sp by k i j e t e s a n t a k a l u ;
+    sub alu.sp by a l u ;
+    sub misikeke.sp by m i s i k e k e ;
+    sub waken.sp by w a k e n ;
+    sub ku.sp by k u ;
+    sub te.sp by t e ;
+    sub to.sp by t o ;
+    sub n.sp by n ;
+    sub ke.sp by k e ;
+    sub wa.sp by w a ;
+} ReverseSPLookup;
+
+lookup NimiSinLookup {
+  lookupflag 0;
+    @cc10_match_1 = [a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+    @cc10_match_2 = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp anu.sp awen.sp
+  e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp jan.sp
+  jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp
+  kute.sp lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp
+  linja.sp lipu.sp loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp
+  mama.sp mani.sp meli.sp mi.sp mije.sp moku.sp moli.sp monsi.sp
+  mu.sp mun.sp musi.sp mute.sp nanpa.sp nasa.sp nasin.sp nena.sp
+  ni.sp nimi.sp noka.sp o.sp olin.sp ona.sp open.sp pakala.sp
+  pali.sp palisa.sp pan.sp pana.sp pi.sp pilin.sp pimeja.sp
+  pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp sama.sp seli.sp
+  selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp sina.sp
+  sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp
+  tu.sp unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp
+  weka.sp wile.sp la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp
+  linluwi.sp ki.sp isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp
+  soko.sp oko.sp oke.sp namako.sp apeja.sp meso.sp
+  kijetesantakalu.sp usawi.sp alu.sp waleja.sp powe.sp
+  misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp cartouche.sp
+  kamalawala.sp waken.sp tokipona.sp linjasuwi.sp slape.sp
+  majuna.sp janpona.sp janike.sp sitelenpona.sp sitelensitelen.sp
+  checkmark lipusona.sp ku.sp Pingo.sp lipamanka.sp te.sp to.sp
+  misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp n.sp likujo.sp
+  ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp taki.sp
+  soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+    @cc10_back_1 = [a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+    @cc10_back_2 = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp anu.sp awen.sp
+  e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp jan.sp
+  jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp
+  kute.sp lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp
+  linja.sp lipu.sp loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp
+  mama.sp mani.sp meli.sp mi.sp mije.sp moku.sp moli.sp monsi.sp
+  mu.sp mun.sp musi.sp mute.sp nanpa.sp nasa.sp nasin.sp nena.sp
+  ni.sp nimi.sp noka.sp o.sp olin.sp ona.sp open.sp pakala.sp
+  pali.sp palisa.sp pan.sp pana.sp pi.sp pilin.sp pimeja.sp
+  pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp sama.sp seli.sp
+  selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp sina.sp
+  sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp
+  tu.sp unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp
+  weka.sp wile.sp la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp
+  linluwi.sp ki.sp isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp
+  soko.sp oko.sp oke.sp namako.sp apeja.sp meso.sp
+  kijetesantakalu.sp usawi.sp alu.sp waleja.sp powe.sp
+  misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp cartouche.sp
+  kamalawala.sp waken.sp tokipona.sp linjasuwi.sp slape.sp
+  majuna.sp janpona.sp janike.sp sitelenpona.sp sitelensitelen.sp
+  checkmark lipusona.sp ku.sp Pingo.sp lipamanka.sp te.sp to.sp
+  misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp n.sp likujo.sp
+  ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp taki.sp
+  soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+    @cc10_ahead_1 = [a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+    @cc10_ahead_2 = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp anu.sp awen.sp
+  e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp jan.sp
+  jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp
+  kute.sp lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp
+  linja.sp lipu.sp loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp
+  mama.sp mani.sp meli.sp mi.sp mije.sp moku.sp moli.sp monsi.sp
+  mu.sp mun.sp musi.sp mute.sp nanpa.sp nasa.sp nasin.sp nena.sp
+  ni.sp nimi.sp noka.sp o.sp olin.sp ona.sp open.sp pakala.sp
+  pali.sp palisa.sp pan.sp pana.sp pi.sp pilin.sp pimeja.sp
+  pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp sama.sp seli.sp
+  selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp sina.sp
+  sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp
+  tu.sp unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp
+  weka.sp wile.sp la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp
+  linluwi.sp ki.sp isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp
+  soko.sp oko.sp oke.sp namako.sp apeja.sp meso.sp
+  kijetesantakalu.sp usawi.sp alu.sp waleja.sp powe.sp
+  misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp cartouche.sp
+  kamalawala.sp waken.sp tokipona.sp linjasuwi.sp slape.sp
+  majuna.sp janpona.sp janike.sp sitelenpona.sp sitelensitelen.sp
+  checkmark lipusona.sp ku.sp Pingo.sp lipamanka.sp te.sp to.sp
+  misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp n.sp likujo.sp
+  ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp taki.sp
+  soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+    sub @cc10_match_2'lookup ReverseSPLookup  @cc10_ahead_1 ;
+    sub @cc10_back_1 @cc10_match_2'lookup ReverseSPLookup  ;
+} NimiSinLookup;
+
+lookup NimiSin2Lookup {
+  lookupflag 0;
+    @cc11_match_1 = [a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+    @cc11_match_2 = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp anu.sp awen.sp
+  e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp jan.sp
+  jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp
+  kute.sp lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp
+  linja.sp lipu.sp loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp
+  mama.sp mani.sp meli.sp mi.sp mije.sp moku.sp moli.sp monsi.sp
+  mu.sp mun.sp musi.sp mute.sp nanpa.sp nasa.sp nasin.sp nena.sp
+  ni.sp nimi.sp noka.sp o.sp olin.sp ona.sp open.sp pakala.sp
+  pali.sp palisa.sp pan.sp pana.sp pi.sp pilin.sp pimeja.sp
+  pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp sama.sp seli.sp
+  selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp sina.sp
+  sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp
+  tu.sp unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp
+  weka.sp wile.sp la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp
+  linluwi.sp ki.sp isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp
+  soko.sp oko.sp oke.sp namako.sp apeja.sp meso.sp
+  kijetesantakalu.sp usawi.sp alu.sp waleja.sp powe.sp
+  misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp cartouche.sp
+  kamalawala.sp waken.sp tokipona.sp linjasuwi.sp slape.sp
+  majuna.sp janpona.sp janike.sp sitelenpona.sp sitelensitelen.sp
+  checkmark lipusona.sp ku.sp Pingo.sp lipamanka.sp te.sp to.sp
+  misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp n.sp likujo.sp
+  ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp taki.sp
+  soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+    @cc11_back_1 = [a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+    @cc11_back_2 = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp anu.sp awen.sp
+  e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp jan.sp
+  jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp
+  kute.sp lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp
+  linja.sp lipu.sp loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp
+  mama.sp mani.sp meli.sp mi.sp mije.sp moku.sp moli.sp monsi.sp
+  mu.sp mun.sp musi.sp mute.sp nanpa.sp nasa.sp nasin.sp nena.sp
+  ni.sp nimi.sp noka.sp o.sp olin.sp ona.sp open.sp pakala.sp
+  pali.sp palisa.sp pan.sp pana.sp pi.sp pilin.sp pimeja.sp
+  pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp sama.sp seli.sp
+  selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp sina.sp
+  sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp
+  tu.sp unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp
+  weka.sp wile.sp la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp
+  linluwi.sp ki.sp isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp
+  soko.sp oko.sp oke.sp namako.sp apeja.sp meso.sp
+  kijetesantakalu.sp usawi.sp alu.sp waleja.sp powe.sp
+  misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp cartouche.sp
+  kamalawala.sp waken.sp tokipona.sp linjasuwi.sp slape.sp
+  majuna.sp janpona.sp janike.sp sitelenpona.sp sitelensitelen.sp
+  checkmark lipusona.sp ku.sp Pingo.sp lipamanka.sp te.sp to.sp
+  misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp n.sp likujo.sp
+  ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp taki.sp
+  soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+    @cc11_ahead_1 = [a b c d e f g h i j k l m n o p q r s t u v w x y z ];
+    @cc11_ahead_2 = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp anu.sp awen.sp
+  e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp jan.sp
+  jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp
+  kute.sp lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp
+  linja.sp lipu.sp loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp
+  mama.sp mani.sp meli.sp mi.sp mije.sp moku.sp moli.sp monsi.sp
+  mu.sp mun.sp musi.sp mute.sp nanpa.sp nasa.sp nasin.sp nena.sp
+  ni.sp nimi.sp noka.sp o.sp olin.sp ona.sp open.sp pakala.sp
+  pali.sp palisa.sp pan.sp pana.sp pi.sp pilin.sp pimeja.sp
+  pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp sama.sp seli.sp
+  selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp sina.sp
+  sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp
+  tu.sp unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp
+  weka.sp wile.sp la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp
+  linluwi.sp ki.sp isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp
+  soko.sp oko.sp oke.sp namako.sp apeja.sp meso.sp
+  kijetesantakalu.sp usawi.sp alu.sp waleja.sp powe.sp
+  misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp cartouche.sp
+  kamalawala.sp waken.sp tokipona.sp linjasuwi.sp slape.sp
+  majuna.sp janpona.sp janike.sp sitelenpona.sp sitelensitelen.sp
+  checkmark lipusona.sp ku.sp Pingo.sp lipamanka.sp te.sp to.sp
+  misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp n.sp likujo.sp
+  ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp taki.sp
+  soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+    sub @cc11_back_1 @cc11_match_2'lookup ReverseSPLookup  ;
+    sub @cc11_match_2'lookup ReverseSPLookup  @cc11_ahead_1 ;
+} NimiSin2Lookup;
+
+feature case {
+
+ script DFLT;
+     language dflt ;
+      lookup UppercaseLookup;
+
+ script cyrl;
+     language dflt ;
+      lookup UppercaseLookup;
+
+ script grek;
+     language dflt ;
+      lookup UppercaseLookup;
+
+ script latn;
+     language dflt ;
+      lookup UppercaseLookup;
+} case;
+
+feature  RQD {
+
+ script DFLT;
+     language dflt ;
+      lookup TeToQuotesLookup;
+      lookup ReplaceSpacesLookup;
+      lookup NimiSinLookup;
+      lookup NimiSin2Lookup;
+
+ script cyrl;
+     language dflt ;
+      lookup TeToQuotesLookup;
+      lookup ReplaceSpacesLookup;
+      lookup NimiSinLookup;
+      lookup NimiSin2Lookup;
+
+ script grek;
+     language dflt ;
+      lookup TeToQuotesLookup;
+      lookup ReplaceSpacesLookup;
+      lookup NimiSinLookup;
+      lookup NimiSin2Lookup;
+
+ script latn;
+     language dflt ;
+      lookup TeToQuotesLookup;
+      lookup ReplaceSpacesLookup;
+      lookup NimiSinLookup;
+      lookup NimiSin2Lookup;
+}  RQD;
+
+feature liga {
+
+ script DFLT;
+     language dflt ;
+      lookup SitelenPonaLookup;
+
+ script latn;
+     language dflt ;
+      lookup SitelenPonaLookup;
+} liga;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [A B C D E F G H I J K L M N O P Q R S T U V W X Y Z space t
+  h e a b c d f g i j k l m n o p q r s u v w x y z question parenleft
+  parenright asterisk plus numbersign equal greater asciicircum one
+  period slash hyphen bracketleft bracketright percent at backslash comma
+  colon semicolon less zero two five six seven eight nine grave
+  asciitilde exclam quotedbl dollar ampersand quotesingle underscore
+  braceleft braceright bar cartouche.sp periodcentered uni200B ];
+@GDEF_Ligature = [a.sp akesi.sp ala.sp alasa.sp ale.sp anpa.sp ante.sp
+  anu.sp awen.sp e.sp en.sp esun.sp ijo.sp ike.sp ilo.sp insa.sp jaki.sp
+  jan.sp jelo.sp jo.sp kala.sp kalama.sp kama.sp uniEE22.sp ken.sp
+  kepeken.sp kili.sp kiwen.sp ko.sp kon.sp kule.sp kulupu.sp kute.sp
+  lape.sp laso.sp lawa.sp len.sp lete.sp li.sp lili.sp linja.sp lipu.sp
+  loje.sp lon.sp luka.sp lukin.sp lupa.sp ma.sp mama.sp mani.sp meli.sp
+  mi.sp mije.sp moku.sp moli.sp monsi.sp mu.sp mun.sp musi.sp mute.sp
+  nanpa.sp nasa.sp nasin.sp nena.sp ni.sp nimi.sp noka.sp o.sp olin.sp
+  ona.sp open.sp pakala.sp pali.sp palisa.sp pan.sp pana.sp pi.sp
+  pilin.sp pimeja.sp pini.sp pipi.sp poka.sp poki.sp pona.sp pu.sp
+  sama.sp seli.sp selo.sp seme.sp sewi.sp sijelo.sp sike.sp sin.sp
+  sina.sp sinpin.sp sitelen.sp sona.sp soweli.sp suli.sp suno.sp supa
+  suwi.sp tan.sp taso.sp tawa.sp telo.sp tenpo.sp toki.sp tomo.sp tu.sp
+  unpa.sp uta.sp utala.sp walo.sp wan.sp waso.sp wawa.sp weka.sp wile.sp
+  la.sp tonsi.sp leko.sp pake.sp kipisi.sp kin.sp linluwi.sp ki.sp
+  isipin.sp kan.sp monsuta.sp lanpan.sp lu.sp soko.sp oko.sp oke.sp
+  namako.sp apeja.sp meso.sp kijetesantakalu.sp usawi.sp alu.sp waleja.sp
+  powe.sp misikeke.sp mulapisu.sp jasima.sp sutopatikuna.sp
+  nasinkulupu.sp kalijopilale.sp ete.sp three four male female nata.sp
+  kijosin.sp mamasin.sp yupekosi.sp unu.sp kamalawala.sp waken.sp
+  tokipona.sp linjasuwi.sp slape.sp majuna.sp janpona.sp janike.sp
+  sitelenpona.sp sitelensitelen.sp checkmark lipusona.sp ku.sp Pingo.sp
+  lipamanka.sp te.sp to.sp misa.sp lipusin.sp ewe.sp polinpin.sp epiku.sp
+  n.sp likujo.sp ke.sp kiki.sp kese.sp kuntu.sp peto.sp pomotolo.sp
+  taki.sp soto.sp teje.sp umesu.sp wa.sp lipunimi.sp ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+  LigatureCaretByPos a.sp 1;
+  LigatureCaretByPos lipusin.sp 0 0 0 0 0 0 0 8;
+} GDEF;
+
+feature ccmp {
+  script latn;
+  language dflt;
+    lookup CapitalToUppercaseLookup;
+} ccmp;
+
+feature ccmp {
+  script latn;
+  language dflt;
+    lookup OneToOneGlyphSubstitution;
+} ccmp;
+
+feature ccmp {
+  script latn;
+  language dflt;
+    lookup ReplaceSpacesLookup;
+} ccmp;
+
+feature ccmp {
+  script latn;
+  language dflt;
+    lookup NimiSinLookup;
+} ccmp;
+
+feature ccmp {
+  script latn;
+  language dflt;
+    lookup NimiSin2Lookup;
+} ccmp;
+
+feature ccmp {
+  script latn;
+  language dflt;
+    lookup TeToQuotesLookup;
+} ccmp;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="te.sp" format="2">
+  <advance width="392"/>
+  <unicode hex="EEAC"/>
+  <outline>
+    <contour>
+      <point x="322" y="641" type="curve" smooth="yes"/>
+      <point x="97" y="641" type="line"/>
+      <point x="97" y="416" type="line" smooth="yes"/>
+      <point x="97" y="402"/>
+      <point x="86" y="391"/>
+      <point x="72" y="391" type="curve" smooth="yes"/>
+      <point x="58" y="391"/>
+      <point x="47" y="402"/>
+      <point x="47" y="416" type="curve" smooth="yes"/>
+      <point x="47" y="666" type="line" smooth="yes"/>
+      <point x="47" y="680"/>
+      <point x="58" y="691"/>
+      <point x="72" y="691" type="curve" smooth="yes"/>
+      <point x="322" y="691" type="line" smooth="yes"/>
+      <point x="336" y="691"/>
+      <point x="347" y="680"/>
+      <point x="347" y="666" type="curve" smooth="yes"/>
+      <point x="347" y="652"/>
+      <point x="336" y="641"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>641</integer>
+            <key>width</key>
+            <integer>50</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>47</integer>
+            <key>width</key>
+            <integer>50</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

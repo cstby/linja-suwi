@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ki.sp" format="2">
+  <advance width="534"/>
+  <unicode hex="EE7E"/>
+  <outline>
+    <contour>
+      <point x="49" y="83" type="curve" smooth="yes"/>
+      <point x="49" y="583" type="line" smooth="yes"/>
+      <point x="49" y="597"/>
+      <point x="60" y="608"/>
+      <point x="74" y="608" type="curve" smooth="yes"/>
+      <point x="474" y="608" type="line" smooth="yes"/>
+      <point x="488" y="608"/>
+      <point x="499" y="597"/>
+      <point x="499" y="583" type="curve" smooth="yes"/>
+      <point x="499" y="569"/>
+      <point x="488" y="558"/>
+      <point x="474" y="558" type="curve" smooth="yes"/>
+      <point x="99" y="558" type="line"/>
+      <point x="99" y="83" type="line" smooth="yes"/>
+      <point x="99" y="69"/>
+      <point x="88" y="58"/>
+      <point x="74" y="58" type="curve" smooth="yes"/>
+      <point x="60" y="58"/>
+      <point x="49" y="69"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>58</integer>
+            <key>width</key>
+            <integer>21</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>558</integer>
+            <key>width</key>
+            <integer>50</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>49</integer>
+            <key>width</key>
+            <integer>50</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
