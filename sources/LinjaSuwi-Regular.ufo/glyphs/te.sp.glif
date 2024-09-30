@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <glyph name="te.sp" format="2">
   <advance width="392"/>
   <unicode hex="EEAC"/>
   <outline>
     <contour>
-      <point x="322" y="641" type="curve" smooth="yes"/>
-      <point x="97" y="641" type="line"/>
-      <point x="97" y="416" type="line" smooth="yes"/>
-      <point x="97" y="402"/>
-      <point x="86" y="391"/>
-      <point x="72" y="391" type="curve" smooth="yes"/>
-      <point x="58" y="391"/>
-      <point x="47" y="402"/>
-      <point x="47" y="416" type="curve" smooth="yes"/>
-      <point x="47" y="666" type="line" smooth="yes"/>
-      <point x="47" y="680"/>
-      <point x="58" y="691"/>
-      <point x="72" y="691" type="curve" smooth="yes"/>
-      <point x="322" y="691" type="line" smooth="yes"/>
-      <point x="336" y="691"/>
-      <point x="347" y="680"/>
-      <point x="347" y="666" type="curve" smooth="yes"/>
-      <point x="347" y="652"/>
-      <point x="336" y="641"/>
+      <point x="322" y="592" type="curve" smooth="yes"/>
+      <point x="97" y="592" type="line"/>
+      <point x="97" y="347" type="line" smooth="yes"/>
+      <point x="97" y="333"/>
+      <point x="86" y="322"/>
+      <point x="72" y="322" type="curve" smooth="yes"/>
+      <point x="58" y="322"/>
+      <point x="47" y="333"/>
+      <point x="47" y="347" type="curve" smooth="yes"/>
+      <point x="47" y="617" type="line" smooth="yes"/>
+      <point x="47" y="631"/>
+      <point x="58" y="642"/>
+      <point x="72" y="642" type="curve" smooth="yes"/>
+      <point x="322" y="642" type="line" smooth="yes"/>
+      <point x="336" y="642"/>
+      <point x="347" y="631"/>
+      <point x="347" y="617" type="curve" smooth="yes"/>
+      <point x="347" y="603"/>
+      <point x="336" y="592"/>
     </contour>
   </outline>
   <lib>

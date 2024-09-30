@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <glyph name="to.sp" format="2">
   <advance width="375"/>
   <unicode hex="EEAD"/>
   <outline>
     <contour>
-      <point x="56" y="25" type="curve" smooth="yes"/>
-      <point x="281" y="25" type="line"/>
-      <point x="281" y="250" type="line" smooth="yes"/>
-      <point x="281" y="264"/>
-      <point x="292" y="275"/>
-      <point x="306" y="275" type="curve" smooth="yes"/>
-      <point x="320" y="275"/>
-      <point x="331" y="264"/>
-      <point x="331" y="250" type="curve" smooth="yes"/>
-      <point x="331" y="-0" type="line" smooth="yes"/>
-      <point x="331" y="-14"/>
-      <point x="320" y="-25"/>
-      <point x="306" y="-25" type="curve" smooth="yes"/>
-      <point x="56" y="-25" type="line" smooth="yes"/>
-      <point x="42" y="-25"/>
-      <point x="31" y="-14"/>
-      <point x="31" y="-0" type="curve" smooth="yes"/>
-      <point x="31" y="14"/>
-      <point x="42" y="25"/>
+      <point x="56" y="108" type="curve" smooth="yes"/>
+      <point x="281" y="108" type="line"/>
+      <point x="281" y="353" type="line" smooth="yes"/>
+      <point x="281" y="367"/>
+      <point x="292" y="378"/>
+      <point x="306" y="378" type="curve" smooth="yes"/>
+      <point x="320" y="378"/>
+      <point x="331" y="367"/>
+      <point x="331" y="353" type="curve" smooth="yes"/>
+      <point x="331" y="83" type="line" smooth="yes"/>
+      <point x="331" y="69"/>
+      <point x="320" y="58"/>
+      <point x="306" y="58" type="curve" smooth="yes"/>
+      <point x="56" y="58" type="line" smooth="yes"/>
+      <point x="42" y="58"/>
+      <point x="31" y="69"/>
+      <point x="31" y="83" type="curve" smooth="yes"/>
+      <point x="31" y="97"/>
+      <point x="42" y="108"/>
     </contour>
   </outline>
   <lib>
@@ -33,7 +33,7 @@
         <array>
           <dict>
             <key>position</key>
-            <integer>-25</integer>
+            <integer>741</integer>
             <key>width</key>
             <integer>50</integer>
           </dict>
