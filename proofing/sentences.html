@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>GFR - Waterfall</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <style type="text/css">
+
+         html{
+             font-family: sans-serif;
+         }
+         @font-face {
+             font-family: "Adobe NotDef";
+             src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+         }
+         .box-title{
+             width: 100%;
+             font-size: 8pt;
+             font-weight: 700;
+             border-top: 1px solid black;
+             padding-top: 5px;
+             margin-bottom: 10pt;
+             display: block;
+         }
+         .box{
+             margin-bottom: 20pt;
+             width: 100%;
+             float: left;
+         }
+         .box-text{
+         }
+
+         #nav{
+             position: fixed;
+             right: 20px;
+             z-index: 100;
+         }
+         #font-toggle{
+         }
+         .nav-item{
+             display: block;
+             cursor: pointer;
+             -webkit-user-select: none; /* Safari */
+             -moz-user-select: none; /* Firefox */
+             -ms-user-select: none; /* IE10+/Edge */
+             user-select: none; /* Standard */
+             text-align: center;
+             color: white;
+             background-color: black;
+             display: block;
+             font-size: 9pt;
+             padding: 5px;
+             margin: 2px;
+         }
+         .tooltip {
+             position: relative;
+             display: inline-block;
+             border-bottom: 1px dotted black;
+         }
+
+         .tooltip .tooltiptext {
+             font-family: sans-serif;
+             visibility: hidden;
+             width: 500px;
+             background-color: black;
+             color: #fff;
+             text-align: left;
+             font-size: 12pt;
+             line-height: 15pt;
+             border-radius: 6px;
+             padding: 5px 0;
+
+             /* Position the tooltip */
+             position: absolute;
+             z-index: 1;
+         }
+
+         .tooltip:hover .tooltiptext {
+             padding: 10px;
+             visibility: visible;
+         }
+         .tooltipleft {
+             float:left;
+             width: 249px;
+         }
+         .tooltipright {
+             float:right;
+             width:250px;
+         }
+
+         /* Stuff needed for the table differ */
+         body {
+             font-family: Helvetica;
+         }
+         .node {
+             font-family: courier;
+             cursor: pointer;
+             position: relative;
+             left: 30px;
+             padding: 5px;
+             display: block;
+             border: 1px dashed grey;
+         }
+         .header {
+             font-weight: bold;
+         }
+         .attr-before{
+             color: red;
+             cursor: text;
+         }
+         .attr-after{
+             color: green;
+             cursor: text;
+         }
+         .leaf {
+             font-weight: bold;
+         }
+         .old .cell .new {
+             display:  none;
+         }
+         .new .cell .old {
+             display:  none;
+         }
+         .both .cell .old {
+             opacity: 0.75;
+             color:  red;
+         }
+         .both .cell .new {
+             opacity: 0.75;
+             position: absolute;
+             top: 0;
+             color:  green;
+         }
+         .spacer {
+             display:block;
+             float:left;
+             width:100%;
+         }
+
+         @font-face{
+             src: url("../fonts/ttf/LinjaSuwi-Regular.ttf");
+             font-family: "linja suwi";
+             font-weight: 400;
+
+             font-style: normal;
+         }
+
+         .Regular{
+             font-family: "linja suwi", "Adobe NotDef";
+             font-weight: 400;
+
+             font-style: normal;
+             font-variation-settings: "wght" 400;
+         }
+
+         #ot-panel {
+             max-height: 400px;
+             overflow-y: scroll;
+             background: white;
+             padding: 10px;
+             display: none;
+         }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <h1>
+                <b>Sentences</b>
+            </h1>
+
+            <div id="sentences">Loading...</div>
+
+            <div class="box">
+                <div class="box-title">Sentences</div>
+                <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 48pt">
+                    1. mi jan Susan<br>
+                    2. sina seme e moku?<br>
+                    3. sina moku e seme?<br>
+                    4. mi la, ma ale li pona<br>
+                    5. waso lili li suwi.<br>
+                    6. ona li toki e ni: "mi wile lape."<br>
+                    mi wile e ni: "mi wile lape" .<br>
+                    7. mi <b>lawa</b> e kulupu.<br>
+                    8. o kepeken ilo SIKO.<br>
+                    9. telo tan kili jelo. (sina ken weka e ona tan kili jelo. ante lasina ken esun e telo ni tan tomo esun. nasin ale li pona!)<br>
+                    10. kokosila<br>
+                    11. pakala lipu<br>
+                    16. sina moku anu seme?<br>
+                    17. ona li toki e ni: “toki! sina pona lukin.<br>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+     // Use fetch to read the text file
+     fetch('sentences.txt')
+         .then(response => response.text())
+         .then(data => {
+             // Display the content in the div
+             document.getElementById('sentences').textContent = data;
+         })
+         .catch(error => {
+             console.error('Error:', error);
+         });
+    </script>
+</html>
