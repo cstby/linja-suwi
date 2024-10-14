@@ -6,10 +6,14 @@
   <integer>833</integer>
   <key>copyright</key>
   <string>Copyright 2024 The Linja Suwi Project Authors (https://github.com/cstby/linja-suwi)</string>
+  <key>openTypeNameLicense</key>
+  <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org</string>
+  <key>openTypeNameLicenseURL</key>
+  <string>https://openfontlicense.org</string>
   <key>descender</key>
   <integer>-167</integer>
   <key>familyName</key>
-  <string>Linja Po</string>
+  <string>Linja Suwi</string>
   <key>guidelines</key>
   <array/>
   <key>italicAngle</key>
@@ -59,15 +63,9 @@
     <integer>608</integer>
   </array>
   <key>postscriptFontName</key>
-<<<<<<< HEAD:sources/linja-po.ufo/fontinfo.plist
   <string>LinjaSuwi-Regular</string>
   <key>postscriptFullName</key>
   <string>Linja Suwi</string>
-=======
-  <string>LinjaPo-Regular</string>
-  <key>postscriptFullName</key>
-  <string>Linja Po</string>
->>>>>>> 081646d (Fix verisoning and name errors):sources/LinjaPo-Regular.ufo/fontinfo.plist
   <key>postscriptUnderlinePosition</key>
   <integer>-100</integer>
   <key>postscriptUnderlineThickness</key>
@@ -75,7 +73,7 @@
   <key>postscriptWeightName</key>
   <string>Regular</string>
   <key>styleMapFamilyName</key>
-  <string>Linja Po</string>
+  <string>Linja Suwi</string>
   <key>styleMapStyleName</key>
   <string>regular</string>
   <key>styleName</key>
