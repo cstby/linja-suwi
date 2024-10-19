@@ -21,11 +21,11 @@
   <key>openTypeHeadCreated</key>
   <string>2024/09/28 17:18:53</string>
   <key>openTypeHheaAscender</key>
-  <integer>693</integer>
+  <integer>833</integer>
   <key>openTypeHheaDescender</key>
-  <integer>-30</integer>
+  <integer>-167</integer>
   <key>openTypeHheaLineGap</key>
-  <integer>90</integer>
+  <integer>0</integer>
   <key>openTypeNameVersion</key>
   <string>Version 1.100</string>
   <key>openTypeOS2FamilyClass</key>
@@ -40,7 +40,7 @@
   <key>openTypeOS2TypoDescender</key>
   <integer>-167</integer>
   <key>openTypeOS2TypoLineGap</key>
-  <integer>90</integer>
+  <integer>0</integer>
   <key>openTypeOS2VendorID</key>
   <string>PfEd</string>
   <key>openTypeOS2WeightClass</key>
@@ -48,9 +48,9 @@
   <key>openTypeOS2WidthClass</key>
   <integer>5</integer>
   <key>openTypeOS2WinAscent</key>
-  <integer>693</integer>
+  <integer>833</integer>
   <key>openTypeOS2WinDescent</key>
-  <integer>30</integer>
+  <integer>167</integer>
       <key>openTypeOS2Selection</key>
     <array>
       <integer>7</integer>
